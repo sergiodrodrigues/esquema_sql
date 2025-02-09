@@ -16,26 +16,26 @@ O esquema de banco de dados foi projetado para atender às necessidades de uma o
 
 <div align="left">
 
-## Descrição as cardinalidades dos relacionamentos no esquema de banco de dados para a oficina mecânica, detalhando o significado de cada um e a justificativa para sua modelagem.
+## Descrição das cardinalidades dos relacionamentos no esquema de banco de dados para a oficina mecânica, detalhando o significado de cada um e a justificativa para sua modelagem
 
 ## 1. Cliente - Veículo (1:N)
-Descrição: Um cliente pode possuir múltiplos veículos (carros, motos, ...), mas um veículo específico pertence a um único cliente.
+Descrição: Um cliente pode possuir múltiplos veículos (carros, motos, ...), mas um veículo específico pertence a um único cliente.<br>
 Justificativa: Esta cardinalidade reflete a realidade de que uma pessoa pode ser proprietária de diversos veículos, mas um veículo individual tem apenas um dono.
 
 ## 2. Veículo - Ordem de Serviço (1:N)
-Descrição: Um veículo pode ter várias ordens de serviço (revisões, reparações, entre outros) ao longo do tempo, mas uma ordem de serviço se refere a um único veículo.
+Descrição: Um veículo pode ter várias ordens de serviço (revisões, reparações, entre outros) ao longo do tempo, mas uma ordem de serviço se refere a um único veículo.<br>
 Justificativa: Um veículo pode necessitar de diferentes serviços em momentos distintos, mas cada ordem de serviço é aberta para um veículo específico.
 
 ## 3. Mecânico - Ordem de Serviço (N:N)
-Descrição: Uma ordem de serviço pode ser atribuída a múltiplos mecânicos (que trabalham em equipa), e um mecânico pode participar de diversas ordens de serviço.
+Descrição: Uma ordem de serviço pode ser atribuída a múltiplos mecânicos (que trabalham em equipa), e um mecânico pode participar de diversas ordens de serviço.<br>
 Justificativa: Uma equipa de mecânicos pode trabalhar em um mesmo veículo, e um mecânico pode atender diferentes veículos ao longo do tempo.
 
 ## 4. Ordem de Serviço - Serviço (N:N)
-Descrição: Uma ordem de serviço pode envolver vários serviços diferentes (troca de óleo, alinhamento, etc.), e um serviço pode ser parte de várias ordens de serviço.
+Descrição: Uma ordem de serviço pode envolver vários serviços diferentes (troca de óleo, alinhamento, etc.), e um serviço pode ser parte de várias ordens de serviço.<br>
 Justificativa: Um veículo pode precisar de múltiplos serviços em uma mesma ordem de serviço, e um serviço específico (como troca de óleo) pode ser realizado em diferentes veículos.
 
 ## 5. Ordem de Serviço - Peça (N:N)
-Descrição: Uma ordem de serviço pode necessitar de várias peças diferentes (filtros, velas, pneus, etc.), e uma peça pode ser utilizada em várias ordens de serviço.
+Descrição: Uma ordem de serviço pode necessitar de várias peças diferentes (filtros, velas, pneus, etc.), e uma peça pode ser utilizada em várias ordens de serviço.<br>
 Justificativa: Um veículo pode precisar de diversas peças em um reparo, e uma peça específica (como um filtro de ar) pode ser utilizada em diferentes veículos.
 
 ## Entidades Fracas
