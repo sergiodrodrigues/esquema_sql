@@ -38,6 +38,7 @@ Justificativa: Um veículo pode precisar de múltiplos serviços em uma mesma or
 Descrição: Uma ordem de serviço pode necessitar de várias peças diferentes (filtros, velas, pneus, etc.), e uma peça pode ser utilizada em várias ordens de serviço.
 Justificativa: Um veículo pode precisar de diversas peças em um reparo, e uma peça específica (como um filtro de ar) pode ser utilizada em diferentes veículos.
 
+## Entidades Fracas
 As tabelas de relacionamento Ordem_Serviço_Mecanico, Ordem_Serviço_Serviço e Ordem_Serviço_Peça são consideradas entidades fracas dado que estas tabelas não possuem uma chave primária própria, mas sim uma chave primária composta pelas chaves estrangeiras que referenciam as tabelas relacionadas. Ou seja, a combinação das chaves estrangeiras (idOrdem_Serviço, idMecanico, idServiço e idPeça) é que identifica unicamente cada registro nessas tabelas.
 
 Exemplo: A tabela Ordem_Serviço_Mecanico não existiria se não existissem as ordens de serviço e os mecânicos. Ela serve apenas para registar a relação entre eles, indicando quais mecânicos estão trabalhando em quais ordens de serviço.
