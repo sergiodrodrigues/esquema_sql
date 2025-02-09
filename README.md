@@ -13,6 +13,9 @@ O esquema de banco de dados foi projetado para atender às necessidades de uma o
 
 <div/>
 
+
+<div align="left">
+
 ## Descrição as cardinalidades dos relacionamentos no esquema de banco de dados para a oficina mecânica, detalhando o significado de cada um e a justificativa para sua modelagem.
 
 ## 1. Cliente - Veículo (1:N)
@@ -38,3 +41,5 @@ Justificativa: Um veículo pode precisar de diversas peças em um reparo, e uma 
 As tabelas de relacionamento Ordem_Serviço_Mecanico, Ordem_Serviço_Serviço e Ordem_Serviço_Peça são consideradas entidades fracas dado que estas tabelas não possuem uma chave primária própria, mas sim uma chave primária composta pelas chaves estrangeiras que referenciam as tabelas relacionadas. Ou seja, a combinação das chaves estrangeiras (idOrdem_Serviço, idMecanico, idServiço e idPeça) é que identifica unicamente cada registro nessas tabelas.
 
 Exemplo: A tabela Ordem_Serviço_Mecanico não existiria se não existissem as ordens de serviço e os mecânicos. Ela serve apenas para registar a relação entre eles, indicando quais mecânicos estão trabalhando em quais ordens de serviço.
+
+</div>
